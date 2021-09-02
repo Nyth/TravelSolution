@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="travelApplication.MainController">
+   <children>
+      <ImageView fitHeight="476.0" fitWidth="676.0" layoutX="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mainbackground.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#00faee" layoutX="146.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Travel Solutions">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#fcff08" layoutX="280.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Right Reserved 2017" />
+      <PasswordField fx:id="LoginPass" layoutX="258.0" layoutY="246.0" promptText="Password is 1234" />
+      <TextField fx:id="LoginUser" layoutX="258.0" layoutY="203.0" promptText="User Name is admin" />
+      <Button fx:id="Login" layoutX="307.0" layoutY="292.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <Label fx:id="labelStatus" layoutX="278.0" layoutY="147.0" text="USER LOGIN" textFill="#00faee">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="450.0" maxWidth="650.0" minHeight="450.0" minWidth="650.0" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="travelApplication.UserRegistration">
+   <children>
+      <ImageView fitHeight="462.0" fitWidth="685.0" layoutX="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/selectionbackground.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0d0d0" height="324.0" layoutX="73.0" layoutY="54.0" opacity="0.44" stroke="BLACK" strokeType="INSIDE" width="521.0" />
+      <TextField fx:id="name" layoutX="186.0" layoutY="75.0" prefHeight="25.0" prefWidth="268.0" promptText="Name" />
+      <TextField fx:id="email" layoutX="186.0" layoutY="211.0" prefHeight="25.0" prefWidth="135.0" promptText="City" />
+      <TextField fx:id="contact" layoutX="187.0" layoutY="177.0" prefHeight="25.0" prefWidth="268.0" promptText="Address" />
+      <Label layoutX="234.0" layoutY="18.0" text="User Registration">
+         <font>
+            <Font name="Century Gothic Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookingController" layoutX="369.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="31.0" prefWidth="77.0" text="Submit" />
+      <Button layoutX="190.0" layoutY="317.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Clear" />
+      <TextField fx:id="address" layoutX="330.0" layoutY="107.0" prefHeight="25.0" prefWidth="122.0" promptText="Passport" />
+      <DatePicker layoutX="187.0" layoutY="106.0" prefHeight="25.0" prefWidth="135.0" promptText="Date of Birth" />
+      <TextField fx:id="email1" layoutX="331.0" layoutY="211.0" prefHeight="25.0" prefWidth="122.0" promptText="Zip" />
+      <TextField fx:id="address1" layoutX="186.0" layoutY="141.0" prefHeight="25.0" prefWidth="135.0" promptText="Email" />
+      <TextField fx:id="address11" layoutX="329.0" layoutY="141.0" prefHeight="25.0" prefWidth="122.0" promptText="Phone Number" />
+      <TextField fx:id="State" layoutX="186.0" layoutY="243.0" prefHeight="25.0" prefWidth="135.0" promptText="State" />
+      <Label layoutX="185.0" layoutY="284.0" text="Payment Method :" />
+      <RadioButton fx:id="cash" layoutX="303.0" layoutY="284.0" mnemonicParsing="false" text="Cash">
+         <toggleGroup>
+            <ToggleGroup fx:id="payment" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="credit" layoutX="365.0" layoutY="284.0" mnemonicParsing="false" onAction="#CreditCard" text="Credit Card" toggleGroup="$payment" />
+      <TextField layoutX="329.0" layoutY="243.0" prefHeight="25.0" prefWidth="122.0" promptText="Country" />
+   </children>
+</AnchorPane>

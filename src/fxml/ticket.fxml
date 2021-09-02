@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="travelApplication.Ticket">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="650.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/selectionbackground.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" fill="WHITE" height="219.0" layoutX="92.0" layoutY="99.0" opacity="0.48" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="498.0" />
+      <Label layoutX="271.0" layoutY="189.0" text="Your Ticket Number  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ticket" layoutX="314.0" layoutY="225.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="107.0" text="Thank You ,">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="userName" layoutX="305.0" layoutY="107.0" prefHeight="53.0" prefWidth="266.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
